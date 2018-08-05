@@ -160,7 +160,7 @@ func move_dir(fname string) error {
 }
 
 func connection() (*sql.DB, error) {
-	var db, err = sql.Open("mysql", "root@tcp(127.0.0.1:3306)/baak")
+	var db, err = sql.Open("mysql", "root@tcp(127.0.0.1:3306)/db")
 
 	if err != nil {
 		fmt.Println(err.Error())
